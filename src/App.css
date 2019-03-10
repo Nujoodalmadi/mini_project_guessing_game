@@ -16,17 +16,17 @@ body {
 }
 
 h3 {
-  position: relative;
+  position: top;
   top: 25vh;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 60px;
   color: $white;
   text-align: center;
 }
 
 button {
   position: relative;
-  padding: 17px;
+  padding: 10px;
   font-size: 1em;
   border-radius: 30px;
   outline: 0.5;
@@ -78,7 +78,7 @@ button {
 
 .buttons {
   position: relative;
-  margin-top: 37vh;
+  margin-top: 12vh;
   margin-left: 6%;
   text-align: center;
 }
@@ -93,6 +93,7 @@ button {
 .message-text {
   color: $background-left;
   font-size: 1.3em;
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   top: 10vh;
   text-align: center;
@@ -127,16 +128,15 @@ input {
 
 .guess-input-field {
   font-size: 1em;
-  float: left;
-  position: relative;
+  float: center;
+  position: center;
   top: 23vh;
-  margin-left: 28%;
-  width: 45%;
+  margin-left: 41%;
+  width: 20%;
   height: 33px;
 }
 
 .HintButton {
-  padding: 17px;
   font-size: 1.2em;
   border-radius: 40px;
   outline: 0;

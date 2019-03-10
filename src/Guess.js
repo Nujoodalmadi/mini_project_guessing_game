@@ -141,7 +141,6 @@ class Guess extends Component {
             onChange={this.handleUserInput.bind(this)}
             placeholder="1-100"
           />
-
           <section className="buttons">
             <button
               className="GuessButton"

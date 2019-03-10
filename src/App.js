@@ -8,7 +8,7 @@ class App extends Component {
   };
   render() {
     return (
-      <div class="w3-container w3-blue">
+      <div>
         <Guess trials={this.state.trials} />
       </div>
     );
@@ -16,5 +16,3 @@ class App extends Component {
 }
 
 export default App;
-
-// random value generated
