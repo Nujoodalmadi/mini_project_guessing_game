@@ -39,10 +39,6 @@ class Guess extends Component {
     this.displayMessage();
   };
 
-  clearClick = () => {
-    this.setState({ guessInput: "" });
-  };
-
   hintClick = () => {
     this.setState({ hints: this.generateHints() });
   };
@@ -148,14 +144,6 @@ class Guess extends Component {
               disabled={this.state.guessInput === "" ? true : false}
             >
               GUESS
-            </button>
-
-            <button
-              className="ClearButton"
-              onClick={this.clearClick.bind(this)}
-              disabled={this.state.guessInput === "" ? true : false}
-            >
-              Clear
             </button>
 
             <button
