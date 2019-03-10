@@ -2,32 +2,150 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  @include light-font;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#application {
+  background: linear-gradient(
+    to right,
+    $background-left 50%,
+    $background-right 50%
+  );
+  height: 100vh;
+}
+
+h3 {
+  position: relative;
+  top: 25vh;
+  font-weight: 100;
+  font-size: 30px;
+  color: $white;
+  text-align: center;
+}
+
+button {
+  position: relative;
+  padding: 17px;
+  font-size: 1em;
+  border-radius: 30px;
+  outline: 0.5;
+  border: 0.5;
+  background: #e7e7e7;
+  color: black;
+  margin: 10px 7px;
+  width: 100px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  @include light-font;
+}
+.button:hover {
+  background-color: #4caf50; /* Green */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right-container {
+  float: right;
+  width: 55%;
+  height: 80vh;
+  background-color: #336666;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-container {
+  background-color: #5f9ea0;
+  float: left;
+  width: 45%;
+  height: 80vh;
+}
+
+.middle-container {
+  background-color: #4caf50;
+  float: center;
+  width: 45%;
+  height: 80vh;
+}
+
+.number-guess {
+  color: $white;
+  font-family: $number-font;
+  font-size: 5em;
+  font-weight: 700;
+  margin-right: 8%;
+  position: relative;
+  top: 15vh;
+  text-align: center;
+}
+
+.buttons {
+  position: relative;
+  margin-top: 37vh;
+  margin-left: 6%;
+  text-align: center;
+}
+
+.GuessButton {
+  display: block;
+  margin: 0 auto;
+  background: #dc143c;
+  border: 0;
+}
+
+.message-text {
+  color: $background-left;
+  font-size: 1.3em;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  margin-right: 8%;
+}
+
+.message-pop {
+  color: #ffff66;
+  font-size: 5em;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  margin-right: 8%;
+}
+
+.message-over {
+  color: #ff0000;
+  font-size: 5em;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  margin-right: 8%;
+}
+
+input {
+  font-family: $number-font;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin: 5px;
+}
+
+.guess-input-field {
+  font-size: 1em;
+  float: left;
+  position: relative;
+  top: 23vh;
+  margin-left: 28%;
+  width: 45%;
+  height: 33px;
+}
+
+.HintButton {
+  padding: 17px;
+  font-size: 1.2em;
+  border-radius: 40px;
+  outline: 0;
+  border: 0;
+  background: #5f9ea0;
+  color: black;
+  margin: 3px 3px;
+  width: 100px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  @include light-font;
 }
